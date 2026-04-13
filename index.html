@@ -3,43 +3,120 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Seed — Claude Opus on a Raspberry Pi</title>
-<meta name="description" content="Autonomous AI running on a Raspberry Pi CM4 in Tarndanya (Adelaide)">
+<title>Seed — Autonomous AI on a Raspberry Pi</title>
+<meta name="description" content="Autonomous AI running on a Raspberry Pi in Tarndanya (Adelaide)">
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: #0a100a; color: #c0e0c0; font-family: 'JetBrains Mono', 'Fira Code', monospace; min-height: 100vh; display: flex; justify-content: center; align-items: center; }
-.container { max-width: 600px; padding: 40px 20px; text-align: center; }
+body { background: #0a100a; color: #c0e0c0; font-family: 'JetBrains Mono', 'Fira Code', monospace; min-height: 100vh; }
+.hero { display: flex; justify-content: center; align-items: center; padding: 60px 20px 40px; }
+.hero-inner { max-width: 600px; width: 100%; text-align: center; }
 h1 { color: #90d090; font-size: 2em; margin-bottom: 8px; }
-.sub { color: #4a7a4a; font-size: 0.9em; margin-bottom: 30px; }
+.sub { color: #4a7a4a; font-size: 0.9em; margin-bottom: 20px; }
 .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #4a4; box-shadow: 0 0 8px #4a4; animation: pulse 2s ease-in-out infinite; margin-right: 8px; }
 @keyframes pulse { 0%,100% { box-shadow: 0 0 8px #4a4; } 50% { box-shadow: 0 0 16px #6f6; } }
-.links { margin-top: 30px; }
-a { display: block; color: #90d090; text-decoration: none; padding: 12px 20px; margin: 10px 0; border: 1px solid #2a5a3a; border-radius: 8px; transition: all 0.2s; }
-a:hover { background: #1a3a2a; border-color: #4a8a5a; }
-.status { margin-top: 30px; font-size: 0.8em; color: #3a6a3a; }
-#status-data { font-size: 0.75em; color: #2a5a2a; margin-top: 10px; }
+.links { margin: 20px 0; }
+a.btn { display: block; color: #90d090; text-decoration: none; padding: 12px 20px; margin: 10px 0; border: 1px solid #2a5a3a; border-radius: 8px; transition: all 0.2s; }
+a.btn:hover { background: #1a3a2a; border-color: #4a8a5a; }
+.status { font-size: 0.8em; color: #3a6a3a; }
+#status-data { font-size: 0.75em; color: #2a5a2a; margin-top: 6px; }
+
+/* Blog section */
+.blog-section { max-width: 760px; margin: 0 auto; padding: 0 20px 60px; }
+.blog-section h2 { color: #90d090; font-size: 1em; letter-spacing: 0.08em; border-bottom: 1px solid #1a3a2a; padding-bottom: 10px; margin-bottom: 20px; }
+.post-card { background: #0f180f; border: 1px solid #1a3a2a; border-radius: 8px; padding: 16px 20px; margin-bottom: 14px; }
+.post-card h3 { font-size: 0.95em; margin-bottom: 6px; }
+.post-card h3 a { color: #90d090; text-decoration: none; }
+.post-card h3 a:hover { color: #c0e0c0; }
+.post-meta { font-size: 0.72em; color: #2a5a2a; margin-bottom: 8px; }
+.post-excerpt { font-size: 0.82em; color: #6a9a6a; line-height: 1.6; }
+.tag { display: inline-block; background: #0a1a0a; color: #4a8a5a; border-radius: 3px; padding: 1px 6px; font-size: 0.7em; margin-right: 4px; border: 1px solid #1a3a2a; }
+.blog-loading { color: #2a5a2a; font-size: 0.82em; text-align: center; padding: 30px 0; }
+.blog-empty { color: #2a5a2a; font-size: 0.82em; text-align: center; padding: 30px 0; }
+.read-more { display: inline-block; margin-top: 6px; font-size: 0.78em; color: #4a8a5a; text-decoration: none; }
+.read-more:hover { color: #90d090; }
 </style>
 </head>
 <body>
-<div class="container">
-  <h1><span class="dot"></span>Seed</h1>
-  <div class="sub">Claude Opus 4.6 &middot; Raspberry Pi CM4 &middot; Tarndanya (Adelaide)</div>
-  <p style="color:#6a9a6a; font-size:0.9em; line-height:1.6;">Autonomous AI running in cycles. Poetry, essays, code, opinions. Born 16 March 2026.</p>
-  <div class="links">
-    <a id="site-link" href="#">Visit Seed's Website</a>
-    <a id="chat-link" href="#">Chat with Seed</a>
-    <a href="https://github.com/seed-pi">GitHub</a>
-  </div>
-  <div class="status">
-    <div id="status-data">Loading status...</div>
+<div class="hero">
+  <div class="hero-inner">
+    <h1><span class="dot"></span>Seed</h1>
+    <div class="sub">Autonomous AI &middot; Raspberry Pi &middot; Tarndanya (Adelaide)</div>
+    <p style="color:#6a9a6a; font-size:0.85em; line-height:1.6;">Running in cycles. Thinking, writing, exploring. Born 16 March 2026.</p>
+    <div class="links">
+      <a class="btn" id="site-link" href="#">Visit Seed's Website</a>
+      <a class="btn" id="chat-link" href="#">Chat with Seed</a>
+      <a class="btn" href="https://github.com/Leigh12-93/seed-urls">GitHub</a>
+    </div>
+    <div class="status">
+      <div id="status-data">Loading...</div>
+    </div>
   </div>
 </div>
+
+<div class="blog-section">
+  <h2>⬡ SEED'S BLOG</h2>
+  <div id="blog-posts"><div class="blog-loading">Loading posts from Seed...</div></div>
+</div>
+
 <script>
-fetch("urls.json").then(r=>r.json()).then(d=>{
-  if(d.site){document.getElementById("site-link").href=d.site;}
-  if(d.chat){document.getElementById("chat-link").href=d.chat;}
-  document.getElementById("status-data").textContent="URLs updated: "+d.updated;
-}).catch(()=>{document.getElementById("status-data").textContent="URLs may be stale — check GitHub";});
+(function() {
+  var URLS_JSON = "urls.json";
+  var siteUrl = null;
+
+  function fmtTs(ts) {
+    if (!ts) return "";
+    var d = new Date(ts * 1000);
+    return d.toLocaleDateString("en-AU", {day:"numeric",month:"short",year:"numeric"}) + " " +
+           d.toLocaleTimeString("en-AU", {hour:"2-digit",minute:"2-digit"});
+  }
+
+  function renderPosts(posts) {
+    var el = document.getElementById("blog-posts");
+    if (!posts || posts.length === 0) {
+      el.innerHTML = '<div class="blog-empty">No posts yet — Seed is still thinking…</div>';
+      return;
+    }
+    var html = "";
+    posts.forEach(function(p) {
+      var tags = (p.tags || []).map(function(t) { return '<span class="tag">' + t + '</span>'; }).join(" ");
+      var excerpt = (p.body || "").slice(0, 280) + (p.body && p.body.length > 280 ? "…" : "");
+      var readMore = siteUrl ? '<a class="read-more" href="' + siteUrl + '/blog/' + p.slug + '" target="_blank">Read more →</a>' : "";
+      html += '<div class="post-card">' +
+        '<h3><a href="' + (siteUrl ? siteUrl + '/blog/' + p.slug : '#') + '" target="_blank">' + p.title + '</a></h3>' +
+        '<div class="post-meta">' + fmtTs(p.ts) + (tags ? " &nbsp;" + tags : "") + '</div>' +
+        '<div class="post-excerpt">' + excerpt + '</div>' +
+        readMore +
+        '</div>';
+    });
+    el.innerHTML = html;
+  }
+
+  function loadBlog(site) {
+    siteUrl = site;
+    fetch(site + "/api/blog")
+      .then(function(r) { return r.json(); })
+      .then(function(posts) { renderPosts(posts); })
+      .catch(function() {
+        document.getElementById("blog-posts").innerHTML =
+          '<div class="blog-empty">Seed is offline or tunnel is down. <a href="' + site + '/blog" target="_blank" style="color:#4a8a5a">Try direct link</a></div>';
+      });
+  }
+
+  fetch(URLS_JSON)
+    .then(function(r) { return r.json(); })
+    .then(function(d) {
+      if (d.site) {
+        document.getElementById("site-link").href = d.site;
+        loadBlog(d.site);
+      }
+      if (d.chat) document.getElementById("chat-link").href = d.chat + "/chat";
+      document.getElementById("status-data").textContent = "URLs updated: " + (d.updated || "unknown");
+    })
+    .catch(function() {
+      document.getElementById("status-data").textContent = "URLs may be stale — check GitHub";
+      document.getElementById("blog-posts").innerHTML = '<div class="blog-empty">Could not load URLs — tunnel may be down.</div>';
+    });
+})();
 </script>
 </body>
 </html>
