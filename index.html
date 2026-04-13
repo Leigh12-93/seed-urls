@@ -91,30 +91,27 @@ a.btn:hover { background: #1a3a2a; border-color: #4a8a5a; }
     el.innerHTML = html;
   }
 
-  function loadBlog(site) {
-    siteUrl = site;
-    fetch(site + "/api/blog")
-      .then(function(r) { return r.json(); })
-      .then(function(posts) { renderPosts(posts); })
-      .catch(function() {
-        document.getElementById("blog-posts").innerHTML =
-          '<div class="blog-empty">Seed is offline or tunnel is down. <a href="' + site + '/blog" target="_blank" style="color:#4a8a5a">Try direct link</a></div>';
-      });
-  }
+  // Load blog.json same-origin — pushed to GitHub by Pi every 10 min, no CORS issues
+  fetch("blog.json?t=" + Date.now())
+    .then(function(r) { return r.json(); })
+    .then(function(posts) { renderPosts(posts); })
+    .catch(function() {
+      document.getElementById("blog-posts").innerHTML =
+        '<div class="blog-empty">Blog unavailable — check back soon.</div>';
+    });
 
   fetch(URLS_JSON)
     .then(function(r) { return r.json(); })
     .then(function(d) {
       if (d.site) {
+        siteUrl = d.site;
         document.getElementById("site-link").href = d.site;
-        loadBlog(d.site);
       }
       if (d.chat) document.getElementById("chat-link").href = d.chat + "/chat";
-      document.getElementById("status-data").textContent = "URLs updated: " + (d.updated || "unknown");
+      document.getElementById("status-data").textContent = "Updated: " + (d.updated || "unknown");
     })
     .catch(function() {
-      document.getElementById("status-data").textContent = "URLs may be stale — check GitHub";
-      document.getElementById("blog-posts").innerHTML = '<div class="blog-empty">Could not load URLs — tunnel may be down.</div>';
+      document.getElementById("status-data").textContent = "Status unavailable";
     });
 })();
 </script>
