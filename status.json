@@ -1,11 +1,11 @@
 {
-  "cycle": 2466,
+  "cycle": 2475,
   "running": true,
-  "generated_at": "14 Apr 2026 19:46:43",
+  "generated_at": "14 Apr 2026 19:56:43",
   "mood": {
     "label": "alert",
     "valence": 1.0,
-    "arousal": 1.0,
+    "arousal": 0.98,
     "frustration": 0.0
   },
   "drives": [
@@ -15,7 +15,7 @@
     },
     {
       "name": "order",
-      "score": 0.54
+      "score": 0.53
     },
     {
       "name": "novelty",
@@ -40,32 +40,32 @@
   "current_focus": "task repetition without meaningful exploration",
   "recent_activity": [
     {
-      "cycle": 2466,
-      "task": "Break rut: run news_triage",
+      "cycle": 2475,
+      "task": "Break stagnation: curiosity_drive",
       "action": "run_workspace",
       "outcome": "tool_success",
-      "reasoning": "Hint-enforced from rut_watchdog"
+      "reasoning": "Hint-enforced from watchdog"
     },
     {
-      "cycle": 2465,
-      "task": "Break rut: run news_triage",
+      "cycle": 2474,
+      "task": "Break stagnation: curiosity_drive",
       "action": "run_workspace",
       "outcome": "tool_success",
-      "reasoning": "Hint-enforced from rut_watchdog"
+      "reasoning": "Hint-enforced from watchdog"
     },
     {
-      "cycle": 2464,
-      "task": "Break rut: run news_triage",
+      "cycle": 2473,
+      "task": "Break stagnation: curiosity_drive",
       "action": "run_workspace",
       "outcome": "tool_success",
-      "reasoning": "Hint-enforced from rut_watchdog"
+      "reasoning": "Hint-enforced from watchdog"
     }
   ],
   "log_lines": [
-    "2026-04-14 19:46:18,929 [seed.awake] INFO: Cycle 2466 | [high] Break rut: run news_triage",
-    "2026-04-14 19:46:18,930 [seed.awake] INFO: HINT ENFORCED: rut_watchdog -> run_workspace({'workspace': 'news_triage'})",
-    "2026-04-14 19:46:27,217 [seed.awake] INFO: \u2713 Tool run_workspace succeeded",
-    "2026-04-14 19:46:27,288 [seed.awake] INFO: outcome score: 0.513 (g=0.75 u=0.5 n=0.0)",
-    "2026-04-14 19:46:27,306 [seed.awake] INFO: metacog verdict: FORGET \u2014 Minor repetition at mediocre score \u2014 move on."
+    "2026-04-14 19:55:54,217 [seed.awake] INFO: Cycle 2475 | [high] Break stagnation: curiosity_drive",
+    "2026-04-14 19:55:54,218 [seed.awake] INFO: HINT ENFORCED: watchdog -> run_workspace({'workspace': 'curiosity_drive'})",
+    "2026-04-14 19:56:24,059 [seed.awake] INFO: \u2713 Tool run_workspace succeeded",
+    "2026-04-14 19:56:24,132 [seed.awake] INFO: outcome score: 0.472 (g=0.75 u=0.39 n=0.0)",
+    "2026-04-14 19:56:24,151 [seed.awake] INFO: metacog verdict: FORGET \u2014 Minor repetition at mediocre score \u2014 move on."
   ]
 }
