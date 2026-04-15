@@ -1,7 +1,7 @@
 {
   "cycle": 4320,
   "running": false,
-  "generated_at": "16 Apr 2026 08:18:36",
+  "generated_at": "16 Apr 2026 08:28:38",
   "mood": {
     "label": "calm",
     "valence": 0.67,
@@ -62,10 +62,10 @@
     }
   ],
   "log_lines": [
-    "2026-04-16 08:18:24,417 [seed.awake] INFO: === SEED BRAIN AWAKE LOOP STARTING ===",
-    "2026-04-16 08:18:24,842 [seed.awake] INFO: TOOL AUDIT: all 33 tools compliant",
-    "2026-04-16 08:18:24,846 [seed.awake] INFO: Checking model...",
-    "2026-04-16 08:18:29,976 [seed.awake] ERROR: Model not ready. Check config/system.json model_path.",
-    "2026-04-16 08:18:29,976 [seed.awake] ERROR: Download model with: bash boot/pull_model.sh"
+    "2026-04-16 08:28:27,090 [seed.awake] INFO: === SEED BRAIN AWAKE LOOP STARTING ===",
+    "2026-04-16 08:28:27,511 [seed.awake] INFO: TOOL AUDIT: all 33 tools compliant",
+    "2026-04-16 08:28:27,514 [seed.awake] INFO: Checking model...",
+    "2026-04-16 08:28:32,643 [seed.awake] ERROR: Model not ready. Check config/system.json model_path.",
+    "2026-04-16 08:28:32,644 [seed.awake] ERROR: Download model with: bash boot/pull_model.sh"
   ]
 }
