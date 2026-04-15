@@ -1,33 +1,33 @@
 {
-  "cycle": 4318,
+  "cycle": 4320,
   "running": true,
-  "generated_at": "16 Apr 2026 06:48:03",
+  "generated_at": "16 Apr 2026 06:58:04",
   "mood": {
     "label": "calm",
-    "valence": 0.69,
-    "arousal": 0.39,
-    "frustration": 0.64
+    "valence": 0.67,
+    "arousal": 0.31,
+    "frustration": 0.68
   },
   "drives": [
     {
       "name": "curiosity",
-      "score": 0.99
+      "score": 0.98
     },
     {
       "name": "novelty",
       "score": 0.98
     },
     {
+      "name": "order",
+      "score": 0.95
+    },
+    {
       "name": "mastery",
-      "score": 0.96
+      "score": 0.93
     },
     {
       "name": "exploration",
-      "score": 0.89
-    },
-    {
-      "name": "order",
-      "score": 0.88
+      "score": 0.93
     }
   ],
   "goal": {
@@ -62,10 +62,10 @@
     }
   ],
   "log_lines": [
-    "2026-04-16 06:44:27,733 [seed.awake] WARNING: Synthesis produced no tasks (2 consecutive).",
-    "2026-04-16 06:45:27,868 [seed.awake] INFO: Queue empty (idle cycle 3). Synthesizing tasks...",
-    "2026-04-16 06:47:28,522 [seed.model] ERROR: Ollama (thinking) unreachable at http://192.168.8.184:11434: <urlopen error timed out>",
-    "2026-04-16 06:47:28,523 [seed.awake] WARNING: Synthesis: no parseable response. Raw: ''",
-    "2026-04-16 06:47:28,524 [seed.awake] WARNING: Synthesis produced no tasks (3 consecutive)."
+    "2026-04-16 06:55:50,711 [seed.awake] INFO: Queue empty (idle cycle 5). Synthesizing tasks...",
+    "2026-04-16 06:57:30,192 [seed.awake] INFO: Shutdown signal received.",
+    "2026-04-16 06:57:51,381 [seed.model] ERROR: Ollama (thinking) unreachable at http://192.168.8.184:11434: <urlopen error timed out>",
+    "2026-04-16 06:57:51,382 [seed.awake] WARNING: Synthesis: no parseable response. Raw: ''",
+    "2026-04-16 06:57:51,383 [seed.awake] WARNING: Synthesis produced no tasks (5 consecutive)."
   ]
 }
