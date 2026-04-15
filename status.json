@@ -1,29 +1,29 @@
 {
-  "cycle": 3845,
+  "cycle": 3847,
   "running": true,
-  "generated_at": "15 Apr 2026 22:19:15",
+  "generated_at": "15 Apr 2026 22:29:15",
   "mood": {
     "label": "alert",
     "valence": 1.0,
-    "arousal": 0.95,
+    "arousal": 0.92,
     "frustration": 0.0
   },
   "drives": [
     {
       "name": "mastery",
-      "score": 0.99
-    },
-    {
-      "name": "order",
       "score": 0.98
     },
     {
+      "name": "order",
+      "score": 0.97
+    },
+    {
       "name": "curiosity",
-      "score": 0.93
+      "score": 0.92
     },
     {
       "name": "novelty",
-      "score": 0.92
+      "score": 0.91
     },
     {
       "name": "exploration",
@@ -62,10 +62,10 @@
     }
   ],
   "log_lines": [
-    "2026-04-15 22:17:50,055 [seed.awake] WARNING: synthesize rejected: 'Verify Bluetooth Stack' (contains 'system_health_monitor')",
-    "2026-04-15 22:18:50,186 [seed.awake] INFO: Cycle 3845 | [high] Document Bluetooth Connectivity",
-    "2026-04-15 22:19:11,227 [seed.awake] INFO: \u2713 Tool run_workspace succeeded",
-    "2026-04-15 22:19:11,271 [seed.awake] INFO: outcome score: 0.523 (g=0.75 u=0.39 n=0.25)",
-    "2026-04-15 22:19:11,288 [seed.awake] INFO: metacog verdict: FORGET \u2014 Minor repetition at mediocre score \u2014 move on."
+    "2026-04-15 22:28:20,257 [seed.awake] INFO: TOOL AUDIT: all 33 tools compliant",
+    "2026-04-15 22:28:20,260 [seed.awake] WARNING: Stale lock (738s old). Claiming.",
+    "2026-04-15 22:28:20,262 [seed.awake] INFO: Checking model...",
+    "2026-04-15 22:28:20,454 [seed.awake] WARNING: Crash recovery: resetting stuck task: Publish Scan Findings",
+    "2026-04-15 22:28:20,571 [seed.awake] INFO: Cycle 3847 | [high] Publish Scan Findings"
   ]
 }
