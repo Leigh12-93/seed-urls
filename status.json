@@ -1,33 +1,33 @@
 {
-  "cycle": 5250,
+  "cycle": 5258,
   "running": true,
-  "generated_at": "17 Apr 2026 04:24:01",
+  "generated_at": "17 Apr 2026 04:34:02",
   "mood": {
     "label": "fatigued",
-    "valence": 0.01,
-    "arousal": 0.01,
-    "frustration": 0.5
+    "valence": 0.0,
+    "arousal": 0.0,
+    "frustration": 0.42
   },
   "drives": [
     {
-      "name": "order",
+      "name": "curiosity",
       "score": 0.99
     },
     {
-      "name": "curiosity",
-      "score": 0.98
-    },
-    {
       "name": "exploration",
-      "score": 0.98
+      "score": 0.99
     },
     {
       "name": "novelty",
-      "score": 0.98
+      "score": 0.99
+    },
+    {
+      "name": "order",
+      "score": 0.95
     },
     {
       "name": "completion",
-      "score": 0.93
+      "score": 0.9
     }
   ],
   "goal": {
@@ -62,10 +62,10 @@
     }
   ],
   "log_lines": [
-    "2026-04-17 04:22:07,635 [seed.model] ERROR: Ollama (thinking) unreachable at http://192.168.8.184:11434: <urlopen error timed out>",
-    "2026-04-17 04:22:07,638 [seed.awake] WARNING: Synthesis: no parseable response. Raw: ''",
-    "2026-04-17 04:22:07,639 [seed.awake] WARNING: Synthesis produced no tasks (5 consecutive).",
-    "2026-04-17 04:23:07,655 [seed.awake] INFO: Running reflection loop...",
-    "2026-04-17 04:23:07,657 [seed.reflect] INFO: Reflection: starting."
+    "2026-04-17 04:32:28,551 [seed.awake] WARNING: Synthesis produced no tasks (3 consecutive).",
+    "2026-04-17 04:33:28,708 [seed.awake] INFO: Queue empty (idle cycle 199). Synthesizing tasks...",
+    "2026-04-17 04:33:30,947 [seed.model] ERROR: Ollama (thinking) unreachable at http://192.168.8.184:11434: HTTP Error 404: Not Found",
+    "2026-04-17 04:33:30,950 [seed.awake] WARNING: Synthesis: no parseable response. Raw: ''",
+    "2026-04-17 04:33:30,950 [seed.awake] WARNING: Synthesis produced no tasks (4 consecutive)."
   ]
 }
