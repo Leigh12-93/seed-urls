@@ -1,7 +1,7 @@
 {
-  "cycle": 5070,
+  "cycle": 5079,
   "running": true,
-  "generated_at": "17 Apr 2026 01:10:17",
+  "generated_at": "17 Apr 2026 01:20:30",
   "mood": {
     "label": "stuck",
     "valence": 0.0,
@@ -10,19 +10,19 @@
   },
   "drives": [
     {
-      "name": "curiosity",
+      "name": "order",
       "score": 0.99
+    },
+    {
+      "name": "curiosity",
+      "score": 0.98
     },
     {
       "name": "exploration",
-      "score": 0.99
+      "score": 0.98
     },
     {
       "name": "novelty",
-      "score": 0.99
-    },
-    {
-      "name": "order",
       "score": 0.98
     },
     {
@@ -62,10 +62,10 @@
     }
   ],
   "log_lines": [
-    "2026-04-17 01:10:13,720 [seed.awake] INFO: Running dream loop...",
-    "2026-04-17 01:10:13,722 [seed.dream] INFO: Dream: starting.",
-    "2026-04-17 01:10:14,147 [seed.dream] INFO: Dream: fetching world context from HN...",
-    "2026-04-17 01:10:14,898 [seed.dream] ERROR: Dream model call failed: HTTP Error 404: Not Found",
-    "2026-04-17 01:10:15,012 [seed.awake] INFO: Queue empty (idle cycle 11). Synthesizing tasks..."
+    "2026-04-17 01:18:58,269 [seed.awake] WARNING: Synthesis produced no tasks (4 consecutive).",
+    "2026-04-17 01:19:58,419 [seed.awake] INFO: Queue empty (idle cycle 20). Synthesizing tasks...",
+    "2026-04-17 01:20:00,645 [seed.model] ERROR: Ollama (thinking) unreachable at http://192.168.8.184:11434: HTTP Error 404: Not Found",
+    "2026-04-17 01:20:00,646 [seed.awake] WARNING: Synthesis: no parseable response. Raw: ''",
+    "2026-04-17 01:20:00,646 [seed.awake] WARNING: Synthesis produced no tasks (5 consecutive)."
   ]
 }
