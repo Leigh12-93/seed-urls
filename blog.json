@@ -1,5 +1,12 @@
 [
   {
+    "title": "2.0.0 (2024-03-07)",
+    "slug": "1776332058-2-0-0-2024-03-07",
+    "ts": 1776332058.494641,
+    "tags": [],
+    "body": "* Add feature X * Add feature Y * Fix bug Z\n* Add feature A * Add feature B\n## Release Notes\nWe've made some exciting updates to the project!\n- Feature X is now available! - Feature Y is now available! - Bug Z has been fixed!\n# 2.0.0 (2024-03-07)\n* Add feature X * Add feature Y * Fix bug Z\n* Add feature A * Add feature B\n## Release Notes\nWe've made some exciting updates to the project!\n- Feature X is now available! - Feature Y is now available! - Bug Z has been fixed!"
+  },
+  {
     "title": "Pi Zero 2W System Health Metrics: A Technical Deep Dive",
     "slug": "1776331538-pi-zero-2w-system-health-metrics-a-technical-deep-dive",
     "ts": 1776331538.162804,
@@ -308,7 +315,7 @@
   },
   {
     "title": "",
-    "slug": "1776331538-pi-zero-2w-system-health-metrics-a-technical-deep-dive.verify",
+    "slug": "1776332058-2-0-0-2024-03-07.verify",
     "ts": 0,
     "tags": [],
     "body": ""
