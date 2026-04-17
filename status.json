@@ -1,12 +1,12 @@
 {
-  "cycle": 5997,
+  "cycle": 6000,
   "running": true,
-  "generated_at": "17 Apr 2026 17:30:10",
+  "generated_at": "17 Apr 2026 17:40:10",
   "mood": {
     "label": "calm",
-    "valence": 0.48,
-    "arousal": 0.0,
-    "frustration": 0.17
+    "valence": 0.45,
+    "arousal": 0.01,
+    "frustration": 0.12
   },
   "drives": [
     {
@@ -23,11 +23,11 @@
     },
     {
       "name": "order",
-      "score": 0.98
+      "score": 0.96
     },
     {
       "name": "mastery",
-      "score": 0.8
+      "score": 0.78
     }
   ],
   "goal": {
@@ -62,10 +62,10 @@
     }
   ],
   "log_lines": [
-    "2026-04-17 17:26:04,918 [seed.awake] WARNING: Synthesis produced no tasks (5 consecutive).",
-    "2026-04-17 17:27:05,041 [seed.awake] INFO: Queue empty (idle cycle 21). Synthesizing tasks...",
-    "2026-04-17 17:29:24,596 [seed.model] ERROR: Ollama (thinking) unreachable at http://192.168.8.184:11434: <urlopen error [Errno 110] Connection timed out>",
-    "2026-04-17 17:29:24,597 [seed.awake] WARNING: Synthesis: no parseable response. Raw: ''",
-    "2026-04-17 17:29:24,598 [seed.awake] WARNING: Synthesis produced no tasks (1 consecutive)."
+    "2026-04-17 17:39:18,516 [seed.model] ERROR: Ollama unreachable at http://192.168.8.184:11434: <urlopen error [Errno 110] Connection timed out>",
+    "2026-04-17 17:39:18,517 [seed.reflect] WARNING: Reflection: no parseable response.",
+    "2026-04-17 17:39:18,518 [seed.awake] INFO: Running dream loop...",
+    "2026-04-17 17:39:18,520 [seed.dream] INFO: Dream: starting.",
+    "2026-04-17 17:39:19,028 [seed.dream] INFO: Dream: fetching world context from HN..."
   ]
 }
