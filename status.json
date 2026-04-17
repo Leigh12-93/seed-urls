@@ -1,12 +1,12 @@
 {
   "cycle": 6000,
   "running": true,
-  "generated_at": "17 Apr 2026 17:40:10",
+  "generated_at": "17 Apr 2026 17:50:13",
   "mood": {
     "label": "calm",
     "valence": 0.45,
-    "arousal": 0.01,
-    "frustration": 0.12
+    "arousal": 0.02,
+    "frustration": 0.1
   },
   "drives": [
     {
@@ -23,7 +23,7 @@
     },
     {
       "name": "order",
-      "score": 0.96
+      "score": 0.95
     },
     {
       "name": "mastery",
@@ -62,10 +62,10 @@
     }
   ],
   "log_lines": [
-    "2026-04-17 17:39:18,516 [seed.model] ERROR: Ollama unreachable at http://192.168.8.184:11434: <urlopen error [Errno 110] Connection timed out>",
-    "2026-04-17 17:39:18,517 [seed.reflect] WARNING: Reflection: no parseable response.",
-    "2026-04-17 17:39:18,518 [seed.awake] INFO: Running dream loop...",
-    "2026-04-17 17:39:18,520 [seed.dream] INFO: Dream: starting.",
-    "2026-04-17 17:39:19,028 [seed.dream] INFO: Dream: fetching world context from HN..."
+    "2026-04-17 17:49:59,702 [seed.awake] ERROR: Model not ready. Check config/system.json model_path.",
+    "2026-04-17 17:49:59,703 [seed.awake] ERROR: Download model with: bash boot/pull_model.sh",
+    "2026-04-17 17:50:10,704 [seed.awake] INFO: === SEED BRAIN AWAKE LOOP STARTING ===",
+    "2026-04-17 17:50:11,171 [seed.awake] INFO: TOOL AUDIT: all 33 tools compliant",
+    "2026-04-17 17:50:11,174 [seed.awake] INFO: Checking model..."
   ]
 }
